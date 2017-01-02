@@ -1,34 +1,24 @@
 {
-  "name": "messenger-bot",
-  "version": "2.4.0",
-  "description": "FB Messenger Platform client",
+  "name": "bot_tut",
+  "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "standard && tap test/*.js --cov"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/remixz/messenger-bot.git"
+    "url": "git+https://github.com/hunter-x/bot_tut.git"
   },
-  "keywords": [
-    "messenger",
-    "api",
-    "client",
-    "bot"
-  ],
-  "author": "Zach Bruggeman <mail@bruggie.com>",
-  "license": "MIT",
+  "author": "",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/remixz/messenger-bot/issues"
+    "url": "https://github.com/hunter-x/bot_tut/issues"
   },
-  "homepage": "https://github.com/remixz/messenger-bot#readme",
+  "homepage": "https://github.com/hunter-x/bot_tut#readme",
   "dependencies": {
-    "request": "^2.71.0",
-    "request-promise": "^4.1.1"
-  },
-  "devDependencies": {
-    "nock": "^9.0.0",
-    "standard": "^8.0.0",
-    "tap": "^8.0.0"
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "request": "^2.79.0"
   }
 }
