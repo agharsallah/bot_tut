@@ -18,13 +18,14 @@ app.get('/', function (req, res) {
     res.send('Hello world, I am a chat bot')
 })
 
-// for Facebook verification
-app.get('/webhook/', function (req, res) {
-    if (req.query['hub.verify_token'] === 'my_voice_is_my_password_verify_me') {
-        res.send(req.query['hub.challenge'])
+// Facebook Webhook
+app.get('/webhook', function (req, res) {
+    if (req.query['hub.verify_token'] === 'testbot_verify_token') {
+        res.send(req.query['hub.challenge']);
+    } else {
+        res.send('Invalid verify token');
     }
-    res.send('Error, wrong token')
-})
+});
 
 // Spin up the server
 app.listen(app.get('port'), function() {
